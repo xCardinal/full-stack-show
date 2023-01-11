@@ -3,7 +3,31 @@
 body {
     height: 100%;
     width: 100%;
-    background-color:whitesmoke;
+    /*background-image: url('https://img.freepik.com/premium-vector/full-stack-developer-working-computer-it-professional-programmer-coding-website-creation-proccess-computer-technology_277904-5495.jpg?w=2000');*/
+    background-color: rgba(245, 245, 245, 0.250);
+    background-position: center;
+    margin: 20px;
+    /*
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    margin: top right bottom left
+    margin: 20px 20px 20px 20px;
+
+    margin: top right bottom
+    margin: 20px 20px 20px
+
+    margin: top/bottom right/left
+    margin: 20px 20px
+
+    margin: top right bottom left
+    margin: 20px
+
+    margin: inherit;
+    */
+
+
 }
 
 /* ID */
@@ -31,6 +55,14 @@ h2.heading {
 
 h3, .div_Hello{
     background-color:rgba(128, 128, 128, 0.250)
+}
+
+.wallpaper {
+    opacity: 0.25;
+}
+
+.iFrames {
+    margin:50px
 }
 
 * {
