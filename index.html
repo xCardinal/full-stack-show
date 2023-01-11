@@ -6,11 +6,15 @@
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 
         <title>My page</title>
+
+        <link rel="stylesheet" href="style.css">
+
         <link rel="icon" href="https://kumardeepak.xyz/blog/wp-content/uploads/2021/05/sunnyPlant.png">
+
     </head>
 
     <body>
-        <h1 style="color:blue;background-color: antiquewhite;">Learning HTML</h1>
+        <h1 style="color:blue;background-color: antiquewhite;" id="website_Title">Learning HTML</h1>
 
         <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
@@ -21,28 +25,80 @@
         </p>
         
         <hr>
-
-        <h2>Text without 'pre'</h2>
-
-        <b>This is a bold text.</b>
-        <br>
-        <strong>This is strong.</strong>
-        <br>
-        <!--Empasize makes the text look different from other elements.-->
-        <em>Emphasize.</em> 
-        <br>
-        <!--Italics-->
-        <i>This is italics.</i>
         
+            <form 
+            onsubmit="runCode(event)"
+            action="/Users/sergiopessegueiro/Desktop/FullStackProject/form.html" 
+            method="POST">
+                <label for="username">Type in your name.</label>
+                <br>
+                <input type="text" name="username" id="username" placeholder="Your name">
+                <br>
+                <label for="userphone">Phone number</label>
+                <br>
+                <input type="tel" name="userphone" id="userphone" placeholder="(+44) 747 ...">
+                <br>
+                <label for="useremail">Email</label>
+                <br>
+                <input type="tel" name="useremail" id="useremail" placeholder="youremail@gmail.com">
+                <br>
+                <label for="checkbox1">Checkbox</label>
+                <br>
+                <input type="checkbox" name="checkbox1" id="checkbox1" value="x">
+                <br>
+                <label for="checkbox1">Checkbox 2</label>
+                <br>
+                <input type="checkbox" name="checkbox2" id="checkbox2" value="y">
+                <br>
+                <label for="radio1">Radio 1</label>
+                <br>
+                <input type="radio" name="radio1" id="radio1" value="x">
+                <br>
+                <label for="radio2">Radio 2</label>
+                <br>
+                <input type="radio" name="radio2" id="radio2" value="y">
+
+                <br>
+
+                <input type="submit" value="Submit changes">
+
+            
+
+            </form>
+
+            <script>
+                function runCode(e)
+                {
+                    console.log(e);
+                    e.preventDefault();
+                    // TODO: Use axios, or fetch
+                }
+            </script>
+
         <hr>
 
-        <h2>Text with 'pre'</h2>
-        <pre>
+        <div class="text_Part">
+            <h2 class="heading">Text without 'pre'</h2>
+            <b>This is a bold text.</b>
+            <br>
+            <strong>This is strong.</strong>
+            <br>
+            <!--Empasize makes the text look different from other elements.-->
+            <em>Emphasize.</em> 
+            <br>
+            <!--Italics-->
+            <i>This is italics.</i>
+        </div>
+         
+        <hr>
+        
+        <div class="text_Part">            
+<pre><h2 class="heading">Text with 'pre'</h2>
 <b>This is a bold text.</b>
 <strong>This is strong.</strong>
 <em>Emphasize.</em> 
-<i>This is italics.</i>
-        </pre>
+<i>This is italics.</i></pre>
+        </div>
 
         <hr>
         <p title="Paragraph">This is a paragraph.</p>
@@ -128,16 +184,43 @@ Different code.
 
         <h3>Block Element vs In-line Element</h3>
 
-        <div style="background-color:cornsilk">
-            <h1>First div</h1>
+        <div class="div_Hello">
+            <h2>First div</h2>
             <!-- <b> is an example of an in-line element-->
             <b>This is bold.</b> 
         </div>
-        <div style="color:burlywood">
+        <div style="color:black" class="div_Hello">
             <h2>Another one</h2>
             <b>Hello.</b>
         </div>
+
+        <hr>
         
+        <!--iFrames are webpages inside webpages-->
+
+        <h2>iFrames</h2>
+
+        <iframe src="https://www.google.com" height="300" width="300" style="border-color: aquamarine;">
+
+        </iframe>
+
+        <p>
+            This is a euro sign -> &euro;
+            <br>
+            This is the Copyright sign -> &#169;
+            <br>
+            This is the Registered sign -> &#174;
+            <br>
+            This is the Trademark sign -> &#8482;
+            <br>
+
+            Spades -> &#9824; //
+            Clubs -> &#9827; //
+            Hearts -> &#9829; //
+            Diamonds -> &#9830;
+
+
+        </p>
 
     </body>
 </html>
